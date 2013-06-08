@@ -1,0 +1,13 @@
+<h1>User#new</h1>
+
+<%=  form_for(@send, :url => {:action => 'create'}) do |c| %>
+
+<p>full name<%= c.text_field(:first_name) %></p>
+
+<p>Last name<%= c.text_field(:last_name) %></p>
+
+<p>email<%= c.text_field(:email) %></p>
+
+<p><%= submit_tag("Save") %></p>
+
+<% end %>

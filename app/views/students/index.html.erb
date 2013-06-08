@@ -1,0 +1,15 @@
+<h1>Home</h1>
+
+add new user <%= link_to("Add", {:action => 'new'}) %>
+
+
+<% @student.each do |s| %>
+
+<p><%= s.first_name %></p>
+
+<p><%= s.last_name %></p>
+
+<p><%= s.email %></p>
+
+<hr />
+<% end %>
